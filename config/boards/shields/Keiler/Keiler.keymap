@@ -53,7 +53,7 @@
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <90>;
             // retro-tap;
             bindings = <&mo>, <&kp>;
         };
