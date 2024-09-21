@@ -4,29 +4,23 @@
 //  ###      ####       ##     ##       ####     #####   
 //  ####     ##         ##     ##       ##       ####    
 //  ## ##    ##         ##     ##       ##       ## ##   
- // ##  ##   ######    ####    ######   ######   ##  ##  
+//  ##  ##   ######    ####    ######   ######   ##  ##  
                                                       
-
 
 
 // Copyright (c) 2022 The ZMK Contributors
 // SPDX-License-Identifier: MIT
-// adding comment to trigger inital build
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define SYM 1
-#define NUM 2
-
-
-
-&caps_word {
-    continue-list = <ESC>;
-};
-
+#define BASE 0
+#define NUM  1
+#define NAV  2
+#define SYM  3
+#define FUN  4
 
 
 / {
@@ -50,7 +44,7 @@
         };
     };
 
-    behaviors {
+    /* behaviors {
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -85,23 +79,23 @@
             tapping-term-ms = <200>;
             bindings = <&kp LCTRL>, <&kp LC(LSHFT)>;
         };
-    };
+    }; */
 
     keymap {
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮          ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  Q       │  W       │  F       │  P       │  B       │          │  J       │  L       │  U       │  Y       │  ;       │
-            &kp Q      &kp W      &kp F      &kp P      &kp B                 &kp J      &kp L      &kp U      &kp Y      &kp SEMI
+        //│  Q       │  W       │  E       │  R       │  T       │          │  Y       │  U       │  I       │  O       │  P       │
+            &kp Q      &kp W      &kp E      &kp R      &kp T                 &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤          ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │  R       │  S       │  T       │  G       │          │  M       │  N       │  E       │  I       │   O      │
-           &ht LGUI A &ht LALT R &ht LCTRL S &ht LSHFT T &kp G                &kp M    &ht RSHFT N &ht RCTRL E &ht LALT I &ht RGUI O
+        //│  A       │  S       │  D       │  F       │  G       │          │  H       │  J       │  K       │  L       │   ;      │
+           &kp A      &kp S      &kp D      &kp F      &kp G                 &kp H      &kp J      &kp K      &kp L      &kp SEMI 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤          ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  D       │  V       │          │  K       │  H       │ , <      │ . >      │ / ?      │
-            &kp Z      &kp X      &kp C      &kp D      &kp V                 &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
+        //│  Z       │  X       │  C       │  V       │  B       │          │  N       │  M       │ , <      │ . >      │ / ?      │
+            &kp Z      &kp X      &kp C      &kp V      &kp B                 &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤          ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                  &kp ESC    &kp TAB    &lp SYM SPACE    &lp NUM RET     &kp BSPC   &kp DEL
+                                  &kp DEL   &lt NAV TAB &kp SPACE            &lt NUM RET &kp LSHFT   &kp BSPC
         //                      ╰──────────┴──────────┴──────────╯          ╰──────────┴──────────┴──────────╯
         >;
         };
