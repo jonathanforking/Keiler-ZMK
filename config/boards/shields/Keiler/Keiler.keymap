@@ -44,7 +44,7 @@
         };
     };
 
-    /* behaviors {
+     behaviors {
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -79,7 +79,7 @@
             tapping-term-ms = <200>;
             bindings = <&kp LCTRL>, <&kp LC(LSHFT)>;
         };
-    }; */
+    }; 
 
     keymap {
         compatible = "zmk,keymap";
