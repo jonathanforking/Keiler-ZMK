@@ -100,20 +100,20 @@
         >;
         };
 
-        sym_layer {
+        num_layer  {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮          ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │    `     │          │          │    ^     │    (     │    )     │    !     │    ~     │
-            &none      &none      &none      &kp GRAVE  &kp STAR              &kp CARET  &kp LPAR   &kp RPAR   &kp EXCL   &kp TILDE
+        //│     !    │     @    │     ;    │    :     │     _    │          │    =     │    7     │    8     │    9     │    +     │
+            &kp EXCL   &kp AT     &kp SEMI  &kp COLON  &kp UNDER             &kp EQUAL   &kp N7      &kp N8    &kp N9    &kp PLUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤          ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │    "     │          │          │    $     │    {     │    }     │    &     │    |     │
-            &none      &kp RALT   &none      &kp DQT    &kp PLUS              &kp DLLR   &kp LBRC   &kp RBRC   &kp AMPS   &kp PIPE
+        //│    \     │     |     │     {    │    (     │     [   │          │    *     │    4     │    5     │    6     │    -     │
+            &BSLH     &kp PIPE    &kp LBRC    &kp LPAR   &kp LBKT             &kp ASTRK   &kp N4    &kp N5     &kp N6     &kp MINUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤          ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │    '     │          │          │    =     │    [     │    ]     │    %     │    \     │
-            &none      &none      &none      &kp SQT    &none                 &kp EQUAL  &kp LBKT   &kp RBKT   &kp PRCNT  &kp BSLH
+        //│     "    │     '    │     }    │    )     │     ]    │          │    0     │    1     │    2     │    3     │    /     │
+            &kp DQT    &kp SQT      &RBRC    &kp RPAR   &kp RBKT             &kp N0     &kp N1     &kp N2      &kp N3     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤          ├──────────┼──────────┼──────────┴──────────┴──────────╯
-        //                      │          │          │          │          │    -_    │    #     │    @     │ 
-                                  &none      &none      &none            &mp UNDER MINUS &kp HASH   &kp AT
+        //                      │          │          │          │          │          │          │          │ 
+                                  &trans      &trans    &mo SYM              &trans      &trans    &trans
         //                      ╰──────────┴──────────┴──────────╯          ╰──────────┴──────────┴──────────╯
             >;
         };
