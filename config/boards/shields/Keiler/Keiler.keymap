@@ -84,7 +84,7 @@
             &kp Q      &kp W      &kp F      &kp P      &kp B                 &kp J      &kp L      &kp U      &kp Y      &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤          ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │          │  M       │  N       │  E       │  I       │   O      │
-           &ht LGUI A &ht LALT R &ht LCTRL S &ht LSHFT T &kp G                &kp M    &ht RSHFT N &ht RCTRL E &ht LALT I &ht RGUI O
+           &ht LGUI A &ht LALT R &ht LCTRL S &ht LSHFT T &kp G                &kp M    &ht RSHFT N &ht RCTRL E &ht RALT I &ht RGUI O
         //├──────────┼──────────┼──────────┼──────────┼──────────┤          ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  V       │          │  K       │  H       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp D      &kp V                 &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
@@ -116,13 +116,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮          ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │    7     │    8     │    9     │          │          │          │          │          │          │          │
-          &bt BT_CLR   &mp F7 N7  &mp F8 N8  &mp F9 N9  &kp HOME              &kp PG_UP  &none      &none      &none      &none
+          &none        &mp F7 N7  &mp F8 N8  &mp F9 N9  &kp HOME              &kp PG_UP  &none      &none      &none      &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤          ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │    4     │    5     │    6     │          │          │          │          │          │          │          │
-          &bt BT_SEL 1 &mp F4 N4  &mp F5 N5  &mp F6 N6  &kp END               &kp PG_DN  &kp LEFT   &kp UP     &kp RIGHT  &none
+          &kp F12      &mp F4 N4  &mp F5 N5  &mp F6 N6  &kp END               &kp PG_DN  &kp LEFT   &kp UP     &kp RIGHT  &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤          ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │    1     │    2     │    3     │    0     │          │          │          │          │          │          │
-          &bt BT_SEL 0 &mp F1 N1  &mp F2 N2  &mp F3 N3  &mp F10 N0            &none      &none      &kp DOWN   &none      &none
+          &kp F11      &mp F1 N1  &mp F2 N2  &mp F3 N3  &mp F10 N0            &none      &none      &kp DOWN   &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤          ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                   &none      &kp LSHFT  &cs                   &none      &none      &none
         //                      ╰──────────┴──────────┴──────────╯          ╰──────────┴──────────┴──────────╯
