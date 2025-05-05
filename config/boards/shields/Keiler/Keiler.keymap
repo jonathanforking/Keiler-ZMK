@@ -84,7 +84,7 @@
             &kp Q      &kp W      &kp F      &kp P      &kp B                 &kp J      &kp L      &kp U      &kp Y      &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤          ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  R       │  S       │  T       │  G       │          │  M       │  N       │  E       │  I       │   O      │
-           &ht LGUI A &ht LALT R &ht LCTRL S &ht LSHFT T &kp G                &kp M    &ht RSHFT N &ht RCTRL E &ht RALT I &ht RGUI O
+           &ht LGUI A &ht LALT R &ht LCTRL S &ht LSHFT T &kp G                &kp M    &ht RSHFT N &ht RCTRL E &ht LALT I &ht RGUI O
         //├──────────┼──────────┼──────────┼──────────┼──────────┤          ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  D       │  V       │          │  K       │  H       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp D      &kp V                 &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
